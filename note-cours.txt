@@ -1,0 +1,32 @@
+Data cleaning
+taille donnee
+rangement donnee (ampiarahana izay tsara miaraka)
+
+renomme les champs si besoin 
+mis ts boolean ilay ao @ilay donnee
+ny CA tokony ho double
+alana ilay euro
+changement type float
+temps d'ouverture (satria donnee exploitable) (soloina float)
+date d'ouverture (object le ao de soloina date)
+
+Gestion des valeurs manquantes
+médiane, min, max, moyenne, écart-type 
+
+esorina izany ts ilaina (verifier pour eviter de perdre des donnees important ou trop de donnee)
+utilisation de : 
+replace / implace  = true
+
+mila alana ny doublon
+
+résume
+uniformisation pour chaque colonne
+remplace na ny valeur ts mis na esorina 
+duree sy date tokony valeur afaka anaovana calcule (afaka exploite na)
+amboarina tsara ny ordre d'affichage (plus important mankany @ moins important) haut -> gauche -> bas -> droite
+
+renomena ho tsaratsara kokoa mba ho mora exploite na ny champ
+ovaina ny type de variable ra information mila atao traitement (castena)
+mila sendena mba ho fantatra oe ty ny nom na prenom
+
+

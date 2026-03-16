@@ -1,0 +1,25 @@
+1-Enlever les doublons (id : 14 , 33 , 68 , 88)
+2-  ~Changer les valeurs nan en null pour la colonne ouverture le dimanche
+    ~Changer le type de colonne en vrai/faux au lieu de texte
+3- Dans la colonne weekly opening hour
+    ~Enlever la valeurs " heures"
+    ~Changer le type du colonne en entier
+4-Ville :
+    ~ Standariser ville : corriger l'incoherence des casses
+5- Pour la colonne CA:
+    ~Supprimer les caracteres " €"
+    ~Conversion du type de colonne en entier
+    ->Afahana mi-calcul somme etc,...
+6-Colonne opening date:
+    ~Changer le type de colone en vrai date , avant c'etait juste texte
+        avec le format JJ-MM-AAAA
+7-Suppression du colonne numero magasin car c'est identique au colonne
+    id magasin . Pour eviter la redondance
+8-Renommer les colonnes en francais clair:
+    ~id magasin => id_magasin
+    ~opening date => date_ouverture
+    ~weekly opening hours => heures_ouverture_hebdomadaires
+    ~ouverture le dimanche => ouvert_le_dimanche
+    ~CA => chiffre_affaires
+    ~ville => ville
+    ~numero de telephone => numero_telephone
