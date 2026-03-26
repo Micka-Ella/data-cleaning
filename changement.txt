@@ -1,9 +1,10 @@
 1-Enlever les doublons (id : 14 , 33 , 68 , 88)
-2-  ~Changer les valeurs nan en null pour la colonne ouverture le dimanche
+2-  ~Changer les valeurs nan en false pour la colonne ouverture le dimanche
     ~Changer le type de colonne en vrai/faux au lieu de texte
 3- Dans la colonne weekly opening hour
     ~Enlever la valeurs " heures"
     ~Changer le type du colonne en entier
+    ~Remplacer les valeur null en médiane
 4-Ville :
     ~ Standariser ville : corriger l'incoherence des casses
 5- Pour la colonne CA:
