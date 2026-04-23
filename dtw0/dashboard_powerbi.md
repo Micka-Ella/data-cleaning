@@ -4,6 +4,9 @@
 Jeu de donnees magasins avec informations d'ouverture, horaires, CA et ville.
 Objectif: produire un dashboard simple et lisible en une page.
 
+## Pages retenues
+- Page 1: Vue reseau magasins
+
 ## Nettoyage des donnees (a appliquer ou verifier)
 - Supprimer les doublons sur id magasin: 14, 33, 68, 88.
 - Normaliser ouverture le dimanche:
@@ -44,7 +47,7 @@ Objectif: produire un dashboard simple et lisible en une page.
 - Heures Moyennes = AVERAGE(Magasins[heures_ouverture_hebdomadaires])
 
 ## Dashboard propose (1 page, style image)
-Titre page: Analyse Reseau Magasins
+Titre page: Vue reseau magasins
 
 Visuels:
 - Carte KPI 1: CA Total

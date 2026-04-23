@@ -11,6 +11,10 @@ TP ETL activite commerciale avec sources heterogenes et modele etoile cible:
 
 Objectif: un dashboard compact mais complet, conforme aux questions d'analyse du sujet.
 
+## Pages retenues
+- Page 1: Vue globale activite commerciale
+- Page 2: Efficacite vendeurs et cout
+
 ## Nettoyage des donnees (deja applique par etl_pipeline.py)
 - Standardisation des codes metier seller/customer/product avec upper(trim()).
 - Harmonisation des dates multi-formats (YYYY-MM-DD, YYYY/MM/DD, DD/MM/YYYY, DD-MM-YYYY).
@@ -43,26 +47,37 @@ Controles QA recommandes:
 - Taux Transformation % = DIVIDE([Nb Ventes], [Nb Promesses])
 - Efficacite CA par Km = DIVIDE([CA Net], [Km Total])
 
-## Dashboard propose (1 page, style image)
-Titre page: Sales Activity Analysis
+## Dashboard propose (2 pages, style image)
 
+### Page 1 - Vue globale activite commerciale
 Visuels:
 - Carte KPI 1: CA Net
 - Carte KPI 2: Montant Promesses
-- Carte KPI 3: Cout Terrain Total
-- Carte KPI 4: Taux Transformation %
+- Carte KPI 3: Km Total
+- Carte KPI 4: Cout Terrain Total
+- Carte KPI 5: Taux Transformation %
 - Histogramme colonnes: CA Net par Vendeur
 - Courbe: CA Net et Cout Terrain par Mois
 - Barres horizontales: Kilometres par Region
-- Barres horizontales: Clients les plus couteux a servir (Cout Terrain)
-- Donut: Repartition des statuts d'activite (order_status/promise_status)
-- Tableau detail: vendeur, client, produit, CA Net, Km, Cout Terrain
+- Donut: Repartition des statuts d'activite
 
 Filtres (slicers):
 - Annee
 - Region
 - Vendeur
 - Categorie produit
+
+### Page 2 - Efficacite vendeurs et cout
+Visuels:
+- Nuage de points: Km Total (X) vs CA Net (Y), taille = Cout Terrain Total, legende = vendeur
+- Carte KPI: CA par Km
+- Barres horizontales: Top 10 clients les plus couteux a servir
+- Tableau detail: date, vendeur, client, produit, CA Net, km_travelled, travel_expense, fuel_cost
+
+Filtres (slicers):
+- Annee
+- Region
+- Vendeur
 - Statut
 
 ## Resultats obligatoires du sujet visibles dans ce dashboard

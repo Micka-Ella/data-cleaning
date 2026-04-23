@@ -11,6 +11,10 @@ Datawarehouse en etoile deja alimente avec:
 
 Objectif: dashboard de pilotage commercial des representants.
 
+## Pages retenues
+- Page 1: Vue executive
+- Page 2: Performance detaillee
+
 ## Nettoyage des donnees (deja applique par ETL, a verifier en QA)
 - Normalisation des champs texte (trim, upper/title selon colonnes).
 - Conversion des types numeriques et dates.
@@ -41,19 +45,31 @@ Controles a faire dans Power BI:
 - Km Total = SUM(fait_analyse_representant[km_parcourus])
 - CA Moyen Vente = AVERAGE(fait_analyse_representant[montant_vente])
 
-## Dashboard propose (1 page, style image)
-Titre page: Performance Commerciale Representants
+## Dashboard propose (2 pages, style image)
 
+### Page 1 - Vue executive
 Visuels:
 - Carte KPI 1: CA Total
 - Carte KPI 2: Marge Totale
 - Carte KPI 3: Rentabilite Nette Totale
 - Carte KPI 4: Km Total
+- Carte KPI 5: Frais Totaux
 - Histogramme colonnes: CA Total par Vendeur (nom_complet)
 - Courbe: Evolution mensuelle CA + Rentabilite (annee/mois)
-- Barres horizontales: Top Produits par CA
-- Matrice: Vendeur x Province avec Nb Visites et Km
 - Donut: CA par Segment client
+
+Filtres (slicers):
+- Annee
+- Vendeur
+- Province
+- Categorie produit
+
+### Page 2 - Performance detaillee
+Visuels:
+- Barres horizontales: Top Produits par CA
+- Matrice: Vendeur x Province avec Nb Ventes, Km et CA
+- Nuage de points: Km Total (X) vs CA Total (Y), taille = Rentabilite Nette
+- Tableau detail: date, vendeur, segment client, produit, quantite, montant_vente, rentabilite_nette
 
 Filtres (slicers):
 - Annee
